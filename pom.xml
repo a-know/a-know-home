@@ -6,10 +6,12 @@
   <version>1.0-SNAPSHOT</version>
   <properties>
     <slim3.version>1.0.16</slim3.version>
-    <appengine.version>1.7.0</appengine.version>
+    <appengine.version>1.8.6</appengine.version>
+    <java.version>1.7</java.version>
     <generated.src>.apt_generated</generated.src>
     <generated.war>war</generated.war>
     <eclipse.lib>eclipse.lib</eclipse.lib>
+    <appengine.sdkdir>/Users/a-know/dev/java/gae/eclipse_kepler/plugins/appengine-java-sdk-1.8.6</appengine.sdkdir>
   </properties>
   <repositories>
     <repository>
@@ -99,6 +101,38 @@
       <version>${appengine.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- ここからアプリケーション固有 -->
+    <dependency>
+		<groupId>informa</groupId>
+		<artifactId>informa</artifactId>
+		<version>0.5.0</version>
+	</dependency>
+    <dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.1.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jdom</groupId>
+		<artifactId>jdom</artifactId>
+		<version>1.1</version>
+	</dependency>
+	<dependency>
+		<groupId>xerces</groupId>
+		<artifactId>xercesImpl</artifactId>
+		<version>2.11.0</version>
+	</dependency>
+	<dependency>
+		<groupId>net.arnx</groupId>
+		<artifactId>jsonic</artifactId>
+		<version>1.2.7</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.scribe</groupId>
+    	<artifactId>scribe</artifactId>
+    	<version>1.3.0</version>
+    </dependency>
+    <!-- ここまでアプリケーション固有 -->
   </dependencies>
   <build>
     <finalName>slim3-maven</finalName>
@@ -122,11 +156,10 @@
             </dependency>
           </dependencies>
         </plugin>
-        <!-- maven-gae-pluginの追加 -->
         <plugin>
           <groupId>net.kindleit</groupId>
           <artifactId>maven-gae-plugin</artifactId>
-          <version>0.7.2</version>
+          <version>0.9.5</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -152,8 +185,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <encoding>utf-8</encoding>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
         </configuration>
       </plugin>
       <plugin>
@@ -308,19 +341,27 @@ ormEnhancementInclusions=
             </file>
           </additionalConfig>
         </configuration>
-      </plugin>
-      <!-- maven-gae-pluginの追加 -->
+      </plugin><!-- maven-gae-pluginの追加 -->
       <plugin>
-          <groupId>net.kindleit</groupId>
-          <artifactId>maven-gae-plugin</artifactId>
-          <version>0.7.2</version>
-          <configuration>
-            <serverId>appengine.google.com</serverId>
-            <sdkDir>/Users/a-know/dev/java/gae/eclipse-kepler/plugins/appengine-java-sdk-1.8.1.1</sdkDir>
-            <appDir>${basedir}/war</appDir>
-          </configuration>
+        <groupId>net.kindleit</groupId>
+        <artifactId>maven-gae-plugin</artifactId>
+        <version>0.9.5</version>
+        <configuration>
+          <serverId>appengine.google.com</serverId>
+          <sdkDir>${appengine.sdkdir}</sdkDir>
+          <appDir>${basedir}/war</appDir>
+          <unpackVersion>${appengine.version}</unpackVersion>
+          <splitJars>true</splitJars>
+        </configuration>
+    	<dependencies>
+    	    <dependency>
+    	        <groupId>net.kindleit</groupId>
+    	        <artifactId>gae-runtime</artifactId>
+    	        <version>${appengine.version}</version>
+    	        <type>pom</type>
+    	    </dependency>
+    	</dependencies>
       </plugin>
-      <!-- maven-war-pluginの追加 -->
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>

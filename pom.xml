@@ -350,14 +350,14 @@ ormEnhancementInclusions=
           <serverId>appengine.google.com</serverId>
           <sdkDir>${appengine.sdkdir}</sdkDir>
           <appDir>${basedir}/war</appDir>
-          <unpackVersion>${appengine.version}</unpackVersion>
+          <unpackVersion>1.8.6</unpackVersion>
           <splitJars>true</splitJars>
         </configuration>
     	<dependencies>
     	    <dependency>
     	        <groupId>net.kindleit</groupId>
     	        <artifactId>gae-runtime</artifactId>
-    	        <version>${appengine.version}</version>
+    	        <version>1.8.6</version>
     	        <type>pom</type>
     	    </dependency>
     	</dependencies>

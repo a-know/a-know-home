@@ -3,3 +3,4 @@ target/generated-sources/apt/com/aknow/a_know_home/meta
 target
 war/WEB-INF/appengine-generated
 war/WEB-INF/lib
+.apt_generated

@@ -17,45 +17,32 @@ $(function(){
 
         success : function(json) {
         	for(var i = 0; i < 10; i++){
-            	if(json.checkins[i].spot.primarycategory != null){
+            	if(json.checkins.items[i].venue.categories[0].icon != null){
             		coco_html = coco_html.concat('<img src="');
-            		coco_html = coco_html.concat(json.checkins[i].spot.primarycategory.icon_url);
-            		coco_html = coco_html.concat('" style="float:left;"><div>');
+            		coco_html = coco_html.concat(json.checkins.items[i].venue.categories[0].icon.prefix);
+            		coco_html = coco_html.concat('44');
+            		coco_html = coco_html.concat(json.checkins.items[i].venue.categories[0].icon.suffix);
+            		coco_html = coco_html.concat('" style="float:left;background-color:#AFEEEE"><div>');
             	}
-        		coco_html = coco_html.concat('<strong>' + (json.checkins[i].created).slice(0, 10) + ' ' + (json.checkins[i].created).slice(11, 19) + '</strong>');
+            	checkin_date = new Date( json.checkins.items[i].createdAt * 1000 )
+        		coco_html = coco_html.concat('<strong>' + checkin_date.getFullYear() + '-' + (checkin_date.getMonth() + 1) + '-' + checkin_date.getDate() + ' ' + checkin_date.getHours() + ':' + checkin_date.getMinutes() + ':' + checkin_date.getSeconds() + '</strong>');
         		coco_html = coco_html.concat('<br>');
-        		coco_html = coco_html.concat(json.checkins[i].spot.name);
-        		if(json.checkins[i].body != ''){
-            		coco_html = coco_html.concat('にイマココ！<br><span style="color:blue;">a-know『' + json.checkins[i].body + '』</span></div><div style="clear:both;"></div><hr>');
+        		coco_html = coco_html.concat(json.checkins.items[i].venue.name);
+        		if(json.checkins.items[i].shout != undefined){
+            		coco_html = coco_html.concat('にイマココ！<br><span style="color:blue;">a-know『' + json.checkins.items[i].shout + '』</span></div><div style="clear:both;"></div><hr>');
         		}else{
             		coco_html = coco_html.concat('にイマココ！</div><div style="clear:both;"></div><hr>');
         		}
         	}
 
 
-        	coco_html = coco_html.concat('<div align="center"><a href="http://c.hatena.ne.jp/a-know/" target="_blank">a-know の はてなココ</a></div>');
+        	coco_html = coco_html.concat('<div align="center">a-know の Foursquare</div>');
         	coco_html = coco_html.concat('<table class="table table-striped table-condensed"><tbody>');
         	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td colspan="2">今週の移動距離</td>');
+        	coco_html = coco_html.concat('<td colspan="2">総チェックイン回数</td>');
         	coco_html = coco_html.concat('</tr>');
         	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td colspan="2"><strong>' + json.stats.travel_distance_of_this_week + ' m</strong></td>');
-        	coco_html = coco_html.concat('</tr>');
-        	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td>イマココ回数</td>');
-        	coco_html = coco_html.concat('<td>コココイン枚数</td>');
-        	coco_html = coco_html.concat('</tr>');
-        	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td><strong>' + json.stats.cocohere_count + ' 回</strong></td>');
-        	coco_html = coco_html.concat('<td><strong>' + json.stats.cococoin_count + ' 枚</strong></td>');
-        	coco_html = coco_html.concat('</tr>');
-        	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td>開拓スポット数</td>');
-        	coco_html = coco_html.concat('<td>作成スポット数</td>');
-        	coco_html = coco_html.concat('</tr>');
-        	coco_html = coco_html.concat('<tr>');
-        	coco_html = coco_html.concat('<td><strong>' + json.stats.visited_cocospot_count + ' ヶ所</strong></td>');
-        	coco_html = coco_html.concat('<td><strong>' + json.stats.created_cocospot_count + ' ヶ所</strong></td>');
+        	coco_html = coco_html.concat('<td colspan="2"><strong>' + json.checkins.count + ' 回</strong></td>');
         	coco_html = coco_html.concat('</tr>');
         	coco_html = coco_html.concat('</tbody></table>');
 

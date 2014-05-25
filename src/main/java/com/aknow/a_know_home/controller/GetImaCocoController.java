@@ -25,7 +25,7 @@ public class GetImaCocoController extends Controller {
         byte[] content = response.getContent();
         
         @SuppressWarnings("rawtypes")
-		LinkedHashMap foursquareLmap = (LinkedHashMap) JSON.decode(new String(content));
+		LinkedHashMap foursquareLmap = (LinkedHashMap) JSON.decode(new String(content, "UTF-8"));
         @SuppressWarnings("rawtypes")
 		LinkedHashMap lmap = (LinkedHashMap) foursquareLmap.get("response");
         

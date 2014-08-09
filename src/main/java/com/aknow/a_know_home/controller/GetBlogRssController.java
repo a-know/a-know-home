@@ -36,7 +36,7 @@ public class GetBlogRssController extends Controller {
         Calendar cal1 = Calendar.getInstance();
 
         @SuppressWarnings("rawtypes")
-		Collection list = UtilityMethods.getRss("http://d.hatena.ne.jp/a-know/rss", "yyyy-MM-dd");
+		Collection list = UtilityMethods.getRss("http://blog.a-know.me/rss", "yyyy-MM-dd");
 
         @SuppressWarnings("unchecked")
 		ItemIF[] items = (ItemIF[]) list.toArray(new ItemIF[0]);
@@ -45,7 +45,7 @@ public class GetBlogRssController extends Controller {
             Map<String, String> entry = new HashMap<String, String>();
             entry.put("target_title", items[i].getTitle());
             entry.put("target_url", items[i].getLink().toString());
-            entry.put("description", items[i].getDescription());
+            entry.put("description", items[i].getDescription().replaceAll("<.+?>", "").substring(0,150) + "...");
             Date tmpDate = (items[i].getDate());
             cal1.setTime(tmpDate);
             cal1.add(Calendar.HOUR, 9);

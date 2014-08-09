@@ -100,7 +100,7 @@ $(function(){
         		}
         		blog_html = blog_html.concat('<span style="color:gray;">' + json.entries[i].description + '</span><hr>');
         	}
-        	blog_html = blog_html.concat('<div align="center"><a href="http://d.hatena.ne.jp/a-know/" target="_blank">えいのうにっき - はてなダイアリー</a></div>');
+        	blog_html = blog_html.concat('<div align="center"><a href="http://blog.a-know.me/" target="_blank">えいのうにっき - はてなブログ</a></div>');
             $("#blog-rss-area").html( blog_html );
         },
         complete : function() {

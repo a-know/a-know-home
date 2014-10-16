@@ -8,9 +8,9 @@
     <include path="/img/*.*"/>
     <include path="/js/*.js"/>
   </static-files>
-  
+
   <precompilation-enabled>true</precompilation-enabled>
-    
+
   <system-properties>
     <property name="slim3.hotReloading" value="true"/>
     <!--

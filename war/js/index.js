@@ -91,7 +91,7 @@ $(function(){
 
         success : function(json) {
 
-        	for(var i = 1; i < 5; i++){
+        	for(var i = 0; i < 4; i++){
         		blog_html = blog_html.concat('<strong>' + json.entries[i].date + '</strong><br>');
         		if(json.entries[i].hatebu_count != ''){
         			blog_html = blog_html.concat('<strong><a href="' + json.entries[i].target_url + '" target="_blank">' + json.entries[i].target_title + '</a></strong> <a href="' + json.entries[i].hatebu_url + '" target="_blank" style="color:#ff1493; text-decoration:underline;">' + json.entries[i].hatebu_count + 'users</a><br>');

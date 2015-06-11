@@ -45,7 +45,7 @@ public class GetBlogRssController extends Controller {
             Map<String, String> entry = new HashMap<String, String>();
             entry.put("target_title", items[i].getTitle());
             entry.put("target_url", items[i].getLink().toString());
-            entry.put("description", items[i].getDescription().replaceAll("<.+?>", "").substring(0,150) + "...");
+            entry.put("description", items[i].getDescription().replaceAll("<script[\\s\\S.]+?/script>", "").replaceAll("<[\\s\\S.]+?>", "").substring(0,150) + "...");
             Date tmpDate = (items[i].getDate());
             cal1.setTime(tmpDate);
             cal1.add(Calendar.HOUR, 9);

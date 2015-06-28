@@ -3,7 +3,6 @@ $(function(){
     var coco_html = "";
     var bukuma_html = "";
     var blog_html = "";
-    var photo_html = "";
 
 	//ajax通信用のコントロールデータ作成
     var controll_data = {};
@@ -102,40 +101,6 @@ $(function(){
         	}
         	blog_html = blog_html.concat('<div align="center"><a href="http://blog.a-know.me/" target="_blank">えいのうにっき - はてなブログ</a></div>');
             $("#blog-rss-area").html( blog_html );
-        },
-        complete : function() {
-          //通信終了
-        }
-    });
-
-	$.ajax({
-        type : 'POST',
-        url : '/getPhotos',
-        data : controll_data,
-        cache : false,
-        dataType : 'json',
-
-        success : function(json) {
-
-        	photo_html = photo_html.concat('<div id="images">');
-        	$.each(json.images.reverse(), function(i, e){
-        		if(i == 0) photo_html = photo_html.concat('<div id="image">');
-        		if(i == 4) photo_html = photo_html.concat('<div id="image">');
-        		photo_html = photo_html.concat('<div style="float:left;padding:5px 5px 5px 5px;">');
-        		photo_html = photo_html.concat('<a href="' + e.image_url + '" target="_blank"><img src="' + e.thumbnail_url + '" class="class_box_shadow"></a>');
-        		photo_html = photo_html.concat('<br>');
-        		photo_html = photo_html.concat('<strong><span style="font-size:70%;">' + e.date + '</span></strong>');
-        		photo_html = photo_html.concat('</div>');
-        		if(i == 3){
-            		photo_html = photo_html.concat('</div><div style="clear:both;"></div>');
-            		photo_html = photo_html.concat('<hr>');
-        		}else if(i == 7){
-            		photo_html = photo_html.concat('</div>');
-        		}
-            });
-    		photo_html = photo_html.concat('<div style="clear:both;"></div>');
-        	photo_html = photo_html.concat('</div>')
-            $("#photo-area").html( photo_html );
         },
         complete : function() {
           //通信終了

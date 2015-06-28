@@ -15,12 +15,12 @@ $(function(){
         success : function(json) {
 
           for(var i = 0; i < 4; i++){
-            blog_html = '<div class="job clearfix"><div class="col-xs-3">'
+            blog_html = blog_html.concat('<div class="job clearfix"><div class="col-xs-3">');
             blog_html = blog_html.concat('<div class="where">' + json.entries[i].date + '</div></div><div class="col-xs-9">');
             if(json.entries[i].hatebu_count != ''){
-              blog_html = blog_html.concat('<a href="' + json.entries[i].target_url + '" target="_blank"><div class="profession">' + json.entries[i].target_title + '</div></a> <a href="' + json.entries[i].hatebu_url + '" target="_blank" style="color:#ff1493; text-decoration:underline;">' + json.entries[i].hatebu_count + 'users</a><br>');
+              blog_html = blog_html.concat('<div class="profession"><a href="' + json.entries[i].target_url + '" target="_blank">' + json.entries[i].target_title + '</a> <a href="' + json.entries[i].hatebu_url + '" target="_blank" style="color:#ff1493; text-decoration:underline;">' + json.entries[i].hatebu_count + 'users</a></div>');
             }else{
-              blog_html = blog_html.concat('<a href="' + json.entries[i].target_url + '" target="_blank"><div class="profession">' + json.entries[i].target_title + '</div></a>');
+              blog_html = blog_html.concat('<div class="profession"><a href="' + json.entries[i].target_url + '" target="_blank">' + json.entries[i].target_title + '</a></div>');
             }
             blog_html = blog_html.concat('<div class="description">' + json.entries[i].description + '</div></div></div>');
           }

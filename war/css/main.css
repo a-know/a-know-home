@@ -353,3 +353,19 @@ MEDIA
     width: 90%;
   }
 }
+
+
+.class_box_shadow {
+  margin: auto;
+  background: #ccc;
+  border: 5px solid white;
+  position:relative;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.47);
+}
+
+.devinfo {
+  text-align: right;
+  color: #888;
+}

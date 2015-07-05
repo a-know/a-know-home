@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-/* 
+/*
     Created on : Mar 5, 2014, 8:13:10 PM
     Author     : Yobio
 */
@@ -68,8 +68,8 @@ body h6 {
   }
 }
 /* end wrapper page section */
-/* ======================================= 
-Header Section 
+/* =======================================
+Header Section
 ========================================== */
 /* wrapper portrait section */
 .portrait {
@@ -147,8 +147,8 @@ Header Section
   letter-spacing: 3px;
 }
 /* end portrait section */
-/* ======================================= 
-Main Section Section 
+/* =======================================
+Main Section Section
 ========================================== */
 /* wrapper for content section */
 #main-content {
@@ -1072,8 +1072,8 @@ blockquote {
   color: white;
 }
 /*End  Global CLass */
-/* ======================================= 
-Footer Section 
+/* =======================================
+Footer Section
 ========================================== */
 /* wrapper footer section */
 .footer {

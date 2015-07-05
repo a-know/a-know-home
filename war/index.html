@@ -2,303 +2,736 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>えいのうのいえ | a-know's Resume / Portfolio page</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Font Icon and Plugins -->
+    <link href="assets/font/fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/font/tello/css/fontello.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/animation.css" rel="stylesheet">
+    <!-- Theme of Design -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="shortcut icon" href="img_org/favicon.ico">
+    <link rel="apple-touch-icon" sizes="129x129" href="assets/images/icon.png">
+
+    <link href="assets/css/yourcss.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="photo-header" class="text-center">
-            <!-- PHOTO (AVATAR) -->
-            <div id="photo">
-              <img src="img/icon_big.png" alt="a-know">
-            </div>
-            <div id="text-header">
-              <h1>えいのうのいえ<br>- a-know's home -<br> my name is <span>a-know</span> and this is my resume/Portfolio page.<br><sup>last updated at 2015-06-28.</sup></h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-7">
-          <!-- ABOUT ME -->
-          <div class="box">
-            <h2>About Me</h2>
-            <p>プログラミングを通じてなにかをつくるのが好きな、三十路の♂。<br>"つくりたい、と思ったものを自由につくれる" "好きなところで、好きなものを好きなようにつくれる『強さ』がある” そんなエンジニアになりたい。</p>
-          </div>
-          <!-- EDUCATION -->
-          <div class="box">
-            <h2>Career</h2>
-            <ul id="education" class="clearfix">
-              <li>
-                <div class="year pull-left">2013</div>
-                <div class="description pull-right">
-                  <h3>株式会社フィードフォース</h3>
-                  <p>アプリケーション開発だけでなく、インフラ面にも携われる点に魅力を感じ転職。開発チームに所属、Webアプリケーションエンジニア職。開発チームリーダーや新人教育・メンターなどを担当。2013/10 〜 現在。</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2012</div>
-                <div class="description pull-right">
-                  <h3>株式会社 CA Beat（サイバーエージェントグループ）</h3>
-                  <p>趣味として活用していた Google App Engine を業務として扱える、とのことで転職。Webアプリケーションエンジニアとして、モバイル端末向けWebアプリケーションの開発に従事。エンジニアリーダーを担当。2012/7 〜 2013/9（1年3ヶ月）。</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2012</div>
-                <div class="description pull-right">
-                  <h3>無職期間</h3>
-                  <p>いずれの組織にも所属せず、Web技術に関する勉強やアイデアとして温めていた Web アプリケーションの開発などに専念していた。2012/1 〜 2012/6（半年）。</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2006</div>
-                <div class="description pull-right">
-                  <h3>JFEシステムズ株式会社</h3>
-                  <p>鉄鋼大手企業のシステム子会社（SIer）に新卒入社。システムエンジニアとして開発業務に一貫して従事。実装リーダー、プロジェクトリーダーを担当。人事部を兼任し新卒採用面接を担当していた期間も。2006/4 〜 2011/12（5年9ヶ月）。</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2004</div>
-                <div class="description pull-right">
-                  <h3>京都府立大学大学院 人間環境科学研究科 環境情報学専攻</h3>
-                  <p>吉冨研究室に所属。主に静止画像圧縮技術・最適化アルゴリズム（GA）についての研究に従事。学会発表も多数。修士論文が査読付き論文として採択されている。2004/4 〜 2006/3（2年）。</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- EXPERIENCES -->
-          <div class="box">
-            <h2>Recent My Activities</h2>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">登壇・発表</div>
-                <div class="year">2015-04-12</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">GCPUG イベント「AWS vs GCP」登壇・発表</div>
-                <div class="description"><a href="http://gcpug.jp/" target="_blank">GCPUG</a>（Google Cloud Platform Users Group）の一環として開催されたイベント「<a href="http://gcpug-tg.connpass.com/event/13704/" target="_blank">AWS vs GCP</a>」にて、AWS ユーザーとして登壇。<a href="http://www.slideshare.net/aknow3373/aws-46898877" target="_blank">発表資料</a>、<a href="http://blog.a-know.me/entry/2015/04/13/191604" target="_blank">感想ブログエントリ</a>。</div>
-              </div>
-            </div>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">社内技術ブログ執筆</div>
-                <div class="year">随時</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">所属会社技術ブログ・feedforce Engineers' blog 執筆</div>
-                <div class="description">所属会社・株式会社フィードフォースの技術ブログ <a href="http://tech.feedforce.jp/author/inoue" target="_blank">feedforce Engineers' blog</a> にて、不定期的に記事を執筆。</div>
-              </div>
-            </div>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">登壇・発表</div>
-                <div class="year">2014-08-20</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">株式会社クレオフーガにて講演・発表</div>
-                <div class="description"><a href="http://creofuga.jp/" target="_blank">株式会社クレオフーガ</a>の岡山オフィスに訪問、自社の開発スタイルについての発表やクレオフーガエンジニアと一緒に KPT を実施などした。<a href="http://blog.a-know.me/entry/2014/08/23/215024" target="_blank">感想ブログエントリ</a>。</div>
-              </div>
-            </div>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">ハッカソン</div>
-                <div class="year">2012-12-12</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">クリスマス直前ハッカソン『サンタソン』優勝</div>
-                <div class="description">クリスマス直前ハッカソン『サンタソン』に参加。元 Twitter Japan のエンジニアも参加する中、優勝を収めた。<a href="http://blog.a-know.me/entry/20121208/1354972898" target="_blank">感想ブログエントリ</a>。</div>
-              </div>
-            </div>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">登壇・発表</div>
-                <div class="year">2012-07-28</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">第3回 岡山Javaユーザ会 勉強会　登壇・発表</div>
-                <div class="description"><a href="https://atnd.org/events/30247" target="_blank">第3回 岡山Javaユーザ会</a> 主催の勉強会において、Java FX 2.x をテーマとした発表をするために登壇。<a href="http://www.slideshare.net/aknow3373/javafx-2x3java" target="_blank">当日用いた発表資料</a>。</div>
-              </div>
-            </div>
-            <div class="job clearfix">
-              <div class="col-xs-3">
-                <div class="where">登壇・発表</div>
-                <div class="year">2012-04-22</div>
-              </div>
-              <div class="col-xs-9">
-                <div class="profession">第13回中国GTUG勉強会 登壇</div>
-                <div class="description">第13回 中国GTUG 勉強会において、Google App Engine をテーマとした発表をするために登壇。<a href="http://www.slideshare.net/a-know/google-app-engine-12635978" target="_blank">当日用いた発表資料</a>、<a href="http://blog.a-know.me/entries/2012/04/22" target="_blank">感想ブログエントリ</a>。</div>
-              </div>
-            </div>
-          </div>
-          <!-- EXPERIENCES -->
-          <div class="box">
-            <h2>Recent My Blog Entries</h2>
-            <div id="blog-rss-area"><div align="center"><img src="img/loadinfo.net.gif"></div></div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5">
-          <!-- CONTACT -->
-          <div class="box clearfix">
-            <h2>Contact</h2>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><img src="http://services.nexodyne.com/email/icon/%2BvGwmdfaOpXpFEU%3D/hxDZeIc%3D/R01haWw%3D/0/image.png"></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
-              <div class="title pull-right">Twitter</div>
-              <a href="https://twitter.com/#!/a_know" target="_blank"><div class="description pull-right">@a_know</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-facebook-official fa-fw"></span></div>
-              <div class="title pull-right">Facebook</div>
-              <a href="https://www.facebook.com/a.know.3373" target="_blank"><div class="description pull-right">https://www.facebook.com/a.know.3373</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-question fa-fw"></span></div>
-              <div class="title pull-right">ask.fm</div>
-              <a href="http://ask.fm/a_know" target="_blank"><div class="description pull-right">Ask to a-know</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-github-alt fa-fw"></span></div>
-              <div class="title pull-right">GitHub</div>
-              <a href="https://github.com/a-know" target="_blank"><div class="description pull-right">GitHub - a-know</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-slideshare fa-fw"></span></div>
-              <div class="title pull-right">slideshare</div>
-              <a href="http://www.slideshare.net/aknow3373" target="_blank"><div class="description pull-right">a-know's presentations</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-pencil-square-o fa-fw"></span></div>
-              <div class="title pull-right">Blog</div>
-              <a href="http://blog.a-know.me/" target="_blank"><div class="description pull-right">えいのうにっき</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-camera-retro fa-fw"></span></div>
-              <div class="title pull-right">Photo Blog</div>
-              <a href="http://photos.a-know.me" target="_blank"><div class="description pull-right">えいのうふぉと</div></a>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-star-half-empty fa-fw"></span></div>
-              <div class="title pull-right">Unfinished Products</div>
-              <a href="http://mikanz.a-know.me/users/a_know/mikanzs" target="_blank"><div class="description pull-right">a-know のミカン一覧 | Mikanz -ミカンズ-</div></a>
-            </div>
-          </div>
-          <!-- LANGUAGES -->
-          <div class="box">
-            <h2>Programming Languages</h2>
-            <div id="language-skills">
-              <div class="skill">Ruby <div class="icons pull-right"><div style="width: 70%;" class="icons-red"></div></div></div>
-              <div class="skill">Java <div class="icons pull-right"><div style="width: 60%;" class="icons-red"></div></div></div>
-              <div class="skill">golang <div class="icons pull-right"><div style="width: 20%;" class="icons-red"></div></div></div>
-              <div class="skill">COBOL <div class="icons pull-right"><div style="width: 40%;" class="icons-red"></div></div></div>
-            </div>
-          </div>
-          <!-- SKILLS -->
-          <div class="box">
-            <h2>Years of Experience (Development Skills)</h2>
-            <div class="skills">
-              <div class="item-skills" data-percent="0.15">AngularJS</div>
-              <div class="item-skills" data-percent="0.40">AWS</div>
-              <div class="item-skills" data-percent="0.30">Chef</div>
-              <div class="item-skills" data-percent="0.40">Google Cloud Platform (BigQuery, Cloud Storage)</div>
-              <div class="item-skills" data-percent="0.90">Google App Engine (Java / golang)</div>
-              <div class="item-skills" data-percent="0.20">Hadoop</div>
-              <div class="item-skills" data-percent="0.15">heroku</div>
-              <div class="item-skills" data-percent="0.80">KVS (Datastore)</div>
-              <div class="item-skills" data-percent="0.80">RDB (Oracle)</div>
-              <div class="item-skills" data-percent="0.45">Ruby on Rails</div>
-              <div class="item-skills" data-percent="0.45">Scrum</div>
-              <div class="item-skills" data-percent="0.45">TDD</div>
-              <div class="skills-legend clearfix">
-                <div class="legend-left legend">0年</div>
-                <div class="legend-left legend"><span>1年</span></div>
-                <div class="legend-right legend"><span>4年</span></div>
-                <div class="legend-right legend">5年〜</div>
-              </div>
-            </div>
-          </div>
-          <!-- HOBBIES -->
-          <div class="box">
-            <h2>My Works</h2>
-            <img src="img/mikanz.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-            <p><a href="http://mikanz.a-know.me/" target="_blank">みんなの未完成品（ミカン）が集まる場所・Mikanz -ミカンズ-</a></p>
-            <p>なにかを作ることを趣味とするユーザーの "つくりかけ" のものを登録し、ユーザー同士応援しあえる、という、
-              「完成させることができるかどうか」を恐れずに何かを創りだそうとする全ての人を応援する、Webサービス。</p>
-            <p class="devinfo">Ruby on Rails / heroku / PostgreSQL | 開発期間：2015/1 〜 2015/6</p>
-            <button class="btn btn-danger"  id="accordion_head">see more</button>
-            <div>
-              <hr>
-              <img src="img/goramoph.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-              <p><a href="http://qiita.com/a-know/items/55b8f102bd07ad2240c2" target="_blank">iTunes 管理楽曲情報 BigQueryローダ "Goramoph"</a></p>
-              <p>iTunes が管理している楽曲情報（曲名・アルバム名・アーティスト名・再生回数・スキップ回数 etc.）を、Google Cloud Storage を経由して Google BigQuery にロードするツール。開発に関しての<a href="http://blog.a-know.me/entry/2014/11/29/144617" target="_blank">感想エントリ</a>も。</p>
-              <p class="devinfo">golang / Google BigQuery | 開発期間：2014/11</p>
-              <hr>
-              <img src="img/masterpiece.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-              <p><a href="http://master-piece.appspot.com/" target="_blank">愛用品紹介系サービス「Masterpiece」</a></p>
-              <p>「大事にされているもの」を集められる場所があれば、そこに登録すること・登録されたものを見ることが小さな楽しみになれば、きっと何らかの「いい」影響を、この世の中に加えることができるんじゃないか・・・。そう考え、制作した Webサービスです。</p>
-              <p class="devinfo">Java / Google App Engine / Bootstrap | 開発期間：2012/3</p>
-              <hr>
-              <img src="img/saboom_client.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-              <p><a href="http://d.hatena.ne.jp/a-know/20990331/" target="_blank">iTunes再生回数分析ソフト「sa-boom!! client」</a></p>
-              <p>iTunesやiPod、iPhoneなどで音楽を聴くことによりカウントされる、再生回数。iTunes上では、再生回数による単純なソートなどを行えるものの、アルバム別やアーティスト別などでのソートや、ある特定期間における再生回数の算出などはサポートされていません。
-これを実現するために、当ソフト「sa-boom!! client」を開発しました。</p>
-              <p class="devinfo">Java FX | 開発期間：2008/08 〜 2009/03（前ver）2012/05（JavaFX 版）</p>
-              <hr>
-              <img src="img/saboom.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-              <p><a href="http://sa-boom.appspot.com/" target="_blank">iTunes再生回数分析・共有サービス「sa-boom!!」※公開終了しました※</a></p>
-              <p>※公開終了しました※ 上記「sa-boom!! client」にて取得した再生回数情報をアップロード、他ユーザーと共有できるWebサービスです。
-当サービス上でも期間差分・順位比較を行った上でのランキング表示を行うことができますが、「再生回数情報の共有」「sa-boom!!利用ユーザー全体での再生トレンドを楽しむ」といった、SNS的要素に主眼を置いています。</p>
-              <p class="devinfo">Java / Google App Engine / Bootstrap | 開発期間：2012/1 〜 2012/02</p>
-              <hr>
-              <img src="img/emornal.png" class="class_box_shadow" style="margin:0 0 10px 0;">
-              <p><a href="http://emornal.appspot.com/" target="_blank">ツイート内容感情解析サービス「Emornal」※公開終了しました※</a></p>
-              <p>※公開終了しました※ あなたの日毎のTwitterでのツイートを自動で感情解析して、 「晴れ（良い）」「曇り（ふつう）」「雨（悪い）」の3段階のアイコンで 日記風にマッピングしてくれるサービスです。
-「日記を付けたいけど、いつも三日坊主で終わっちゃう・・・」というあなたに。ライフログの第1歩として、日頃のTwitterでのツイートをそのまま、簡単な日記として活用してみませんか。（Mashup Award #8 応募作品）</p>
-              <p class="devinfo">Java / Google App Engine / Bootstrap / 感情解析API | 開発期間：2012/10</p>
-            </div>
-          </div>
-          <!-- HOBBIES -->
-          <div class="box">
-            <h2>Interests</h2>
-            <div class="hobby">Drive-a-Car</div>
-            <div class="hobby">Interia</div>
-            <div class="hobby">Badminton</div>
-            <div class="hobby">Programming</div>
-          </div>
-          <!-- HOBBIES -->
-          <div class="box">
-            <h2>Reading</h2>
-              <script type="text/javascript" src="http://widget.booklog.jp/blogparts/js/booklog_minishelf.js?wood_disp" id="booklog_minishelf"></script>
-              <script type="text/javascript" src="http://api.booklog.jp/json/a-know?category=0&count=15&callback=booklog_minishelf"></script>
-          </div>
-        </div>
-      </div>
-      <hr>
+    <!-- =========
+    Start Wrapper Page
+    ===================================-->
+    <div id="wrapper">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
 
-      <footer>
-        <p>&copy; a-know 2012 (<a href="https://twitter.com/#!/a_know" target="_blank">@a_know</a>)
-        <img src="https://developers.google.com/appengine/images/appengine-noborder-120x30.gif" alt="Powered by Google App Engine"/></p>
-      </footer>
+            <!-- =========
+            Start portrait section
+            ===================================-->
+            <header class="portrait">
+              <div class="bg-line"></div>
+              <div class="body-portrait">
+
+                <!-- =========
+                Start Note Slider
+                ===================================-->
+                <div class="box-note">
+                  <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        "つくりたい、と思ったものを自由につくれる"<br>ひとになりたい！ :)
+                      </div>
+                      <div class="item">
+                        好きなところで、好きなものを好きなように<br>つくれる、"強さ" が欲しい！ :)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========
+                End Note Slider
+                ===================================-->
+
+                <!-- =========
+                Start portrait image Section
+                ===================================-->
+                <div class="portrait-img-area">
+                  <img src="img_org/icon_big.png" alt="avatar" class="avatar"/>
+                  <div class="profile-links">
+                    <a target="_blank" href="https://github.com/a-know" class="github"  data-toggle="tooltip" data-placement="left" title="GitHub"><i class="fa fa-github-alt"></i></a>
+                    <a target="_blank" href="https://twitter.com/#!/a_know" class="twitter"  data-toggle="tooltip" data-placement="right" title="Twitter"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+                <!-- =========
+                End  portrait image Section
+                ===================================-->
+
+                <!-- =========
+                Start Show Yor Name Section
+                ===================================-->
+                <h1 class="name">えいのうのいえ <small>a-know's home | Resume / Portfolio page</small></h1>
+                <img src="assets/images/arrow-down.png" alt="" class="img-arrow">
+                <a href="javascript:void(0)" class="btn btn-flat " id="open-content">About Me</a>
+                <img src="assets/images/arrow-down.png" alt="" class="img-arrow">
+                <h1 class="name"><small>last updated at 2015-07-05</small></h1>
+                <!-- =========
+                Start Show Yor Name Section
+                ===================================-->
+
+              </div>
+            </header>
+            <!-- =========
+            End portrait section
+            ===================================-->
+
+
+            <!-- =========
+            Start Content section
+            ===================================-->
+            <section class="content" id="main-content">
+
+              <!-- =========
+              Start navigation section
+              ===================================-->
+              <nav id='navigation'>
+                <ul class="navigation-list clearfix list-unstyled">
+                  <li class="active"><a href="#about" data-toggle="tab" data-menu="about"><i class="icon-user"></i> <span>About Me</span></a></li>
+                  <li><a href="#resume" data-toggle="tab" data-menu="resume"><i class="icon-newspaper"></i>  <span>Resume</span></a></li>
+                  <li><a href="#portfolio" data-toggle="tab" data-menu="portfolio"><i class="icon-folder-open"></i> <span>Portfolio</span></a></li>
+                  <li><a href="#blog" data-toggle="tab" data-menu="blog"><i class="icon-pencil"></i> <span >Blog</span></a></li>
+                </ul>
+              </nav>
+              <!-- =========
+              End navigation section
+              ===================================-->
+
+
+              <!-- =========
+              Start tab content section
+              ===================================-->
+              <div class="tab-content">
+
+
+                <!-- =========
+                Start About tab content section
+                ===================================-->
+                <div id='about' class="tab-pane  fade in  active">
+                  <div class="body-content">
+
+                    <!-- =========
+                    Start About your self section
+                    ===================================-->
+                    <div class="row">
+                      <div class="col-md-3 text-center">
+                        <img src="img_org/icon_big.png" alt="avatar" class="img-responsive img-profile">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="mini-desc">
+                          <h2 class="title">a-know（えい-のう）</h2>
+                          <p>いわゆるプログラミングというやつを通じてなにかをつくるのが好きな、三十路の♂です。</p>
+                          <p>"つくりたい、と思ったものを自由につくれる" 、"好きなところで、好きなものを好きなようにつくれる『強さ』がある” 、そんなひとになりたいです。</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End About your self section
+                    ===================================-->
+
+                    <!-- =========
+                    Start List Indentity and services your self  section
+                    ===================================-->
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="title with-icon"><i class="fa fa-credit-card icn-title"></i> Contact</h3>
+                        <div class="identity-area">
+                          <div class="row">
+                            <div class="col-sm-4"><label>Email</label></div>
+                            <div class="col-sm-8"><img src="http://services.nexodyne.com/email/icon/%2BvGwmdfaOpXpFEU%3D/hxDZeIc%3D/R01haWw%3D/0/image.png"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Twitter</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="https://twitter.com/#!/a_know">@a_know</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Facebook</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="https://www.facebook.com/a.know.3373">a.know.3373</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>ask.fm</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="http://ask.fm/a_know">Ask to a-know</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>GitHub</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="https://github.com/a-know">GitHub - a-know</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>slideshare</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="http://www.slideshare.net/aknow3373">a-know's presentation</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Blog</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="http://blog.a-know.me/">えいのうにっき</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Photo Blog</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="http://photos.a-know.me/">えいのうふぉと</a></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Unfinished Products</label></div>
+                            <div class="col-sm-8"><a target="_blank" href="http://mikanz.a-know.me/users/a_know/mikanzs">a-know のミカン一覧 | Mikanz -ミカンズ-</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="title with-icon"><i class="fa fa-heart icn-title"></i> Interests</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-strip">
+                            <li><i class="fa fa-star"></i> プログラミングで何かをつくること</li>
+                            <li><i class="fa fa-star"></i> Bootstrap 有料 デザインテーマの物色</li>
+                            <li><i class="fa fa-star"></i> インテリア雑貨・小物の物色</li>
+                            <li><i class="fa fa-star"></i> 愛車でドライブ</li>
+                            <li><i class="fa fa-star"></i> カバン収集</li>
+                            <li><i class="fa fa-star"></i> バドミントン</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End List Indentity and services your self section
+                    ===================================-->
+
+
+                    <!-- =========
+                    End List fact your self section
+                    ===================================-->
+
+                    <!-- =========
+                    Start List your  client  and testimonial section
+                    ===================================-->
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h3 class="title with-icon "><i class="fa fa-comments icn-title"></i> Recent Tweets</h3>
+                        <div class="box-block">
+                          <!-- start TweetsWind code -->
+                          <iframe     scrolling="no" frameborder="0" id="twitterWindIframe"     style="width:290px;height:240px; border:none;"     src="http://www.tweetswind.com/show?option=%7B%22isOnlyMe%22%3A%20%22true%22%2C%20%22twitterwind_frame_width%22%3A%20%22290%22%2C%20%22twitterwind_frame_height%22%3A%20%22240%22%2C%20%22twitterwind_frame_border%22%3A%20%22none%22%2C%20%22twitterwind_frame_border_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_base_font_size%22%3A%20%2212%22%2C%20%22twitterwind_logoimage%22%3A%20%22whiteonblue%22%2C%20%22twitterwind_username%22%3A%20%22none%22%2C%20%22twitterwind_username_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_username_color%22%3A%20%22333333%22%2C%20%22twitterwind_username_follow%22%3A%20%22on%22%2C%20%22twitterwind_max_length%22%3A%20%22140%22%2C%20%22twitterwind_logo_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit%22%3A%20%22on%22%2C%20%22twitterwind_twit_scroll_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_twit_scroll_bg_color%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_color%22%3A%20%22333333%22%2C%20%22twitterwind_twit_link_color%22%3A%20%220084B4%22%2C%20%22twitterwind_opacity%22%3A%20%22off%22%2C%20%22twitterwind_follower%22%3A%20%22none%22%2C%20%22twitterwind_follower_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22usn%22%3A%20%22150606%22%7D"     > </iframe>
+                          <div style="font-size:12px; text-align:right; width:290px"><a target="_blank" href="http://www.tweetswind.com">TweetsWind</a></div>
+                          <!-- end TweetsWind code -->
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <h3 class="title with-icon "><i class="fa fa-bookmark icn-title"></i> Recent Bookmarks</h3>
+                        <div class="box-block">
+                          <div id='testimonial-slider' class="carousel slide" data-ride="carousel" data-interval="false">
+
+                            <div id="bukuma-area"></div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="title with-icon"><i class="fa fa-book icn-title"></i> Recent Reading</h3>
+                        <div class="box-block">
+                          <script type="text/javascript" src="http://widget.booklog.jp/blogparts/js/booklog_minishelf.js?wood_disp" id="booklog_minishelf"></script>
+                          <script type="text/javascript" src="http://api.booklog.jp/json/a-know?category=0&count=15&callback=booklog_minishelf"></script>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End List your  client  and testimonial section
+                    ===================================-->
+
+                  </div>
+                </div>
+                <!-- =========
+                End About tab content section
+                ===================================-->
+
+
+
+                <!-- =========
+                Start resume tab content section
+                ===================================-->
+                <div id='resume' class="tab-pane fade">
+                  <div class="body-content">
+                    <div class="row">
+                      <div class="col-md-8">
+
+
+                        <!-- =========
+                        Start Time line section
+                        ===================================-->
+                        <h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span> Career</h3>
+                        <div class="box-block">
+                          <div class="time-line">
+                            <div class="item-event current">
+                              <span class="date">2013</span>
+                              <div class="event-content">
+                                <h4>Webアプリケーションエンジニア（Rails / AWS）</h4>
+                                <h5><a target="_target" href="https://www.feedforce.jp/">株式会社フィードフォース</a></h5>
+                                <p>アプリケーション開発だけでなく、インフラ面にも携われる点に魅力を感じ転職。開発チームに所属。開発チームリーダーや新人教育・メンターなども担当。2013/10 〜 現在。</p>
+                              </div>
+                            </div>
+                            <div class="item-event">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>サーバーサイドエンジニア（Java / GAE）</h4>
+                                <h5>株式会社CA Beat（サイバーエージェントグループ）</h5>
+                                <p>趣味として活用していた Google App Engine を業務として扱える、とのことで転職。Webアプリケーションエンジニアとして、モバイル端末向けWebアプリケーションの開発に従事。エンジニアリーダーを担当。対外的に技術的なやりとりを行うことも。2012/7 〜 2013/9（1年3ヶ月）。</p>
+                              </div>
+                            </div>
+                            <div class="item-event">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>−（Java / GAE）</h4>
+                                <h5>無職期間</h5>
+                                <p>いずれの組織にも所属せず、Web技術に関する勉強やアイデアとして温めていた Web アプリケーションの開発などに専念していた期間。2012/1 〜 2012/6（半年）。</p>
+                              </div>
+                            </div>
+                            <div class="item-event">
+                              <span class="date">2006</span>
+                              <div class="event-content">
+                                <h4>システムエンジニア（COBOL / Java）</h4>
+                                <h5>JFEシステムズ株式会社</h5>
+                                <p>鉄鋼大手企業のシステム子会社（SIer）に新卒入社。システムエンジニアとして開発業務に一貫して従事。実装リーダー、プロジェクトリーダーを担当。人事部を兼任し新卒採用面接を担当していた期間も。2006/4 〜 2011/12（5年9ヶ月）。</p>
+                              </div>
+                            </div>
+                            <div class="item-event last">
+                              <span class="date">2004</span>
+                              <div class="event-content">
+                                <h4>大学院生（修士）（C言語）</h4>
+                                <h5>京都府立大学大学院 人間環境科学研究科 環境情報学専攻</h5>
+                                <p>吉冨研究室に所属。主に静止画像圧縮技術・最適化アルゴリズム（GA）についての研究に従事。学会発表も多数。修士論文が査読付き論文として採択されている。2004/4 〜 2006/3（2年）。</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- =========
+                        End Time line section
+                        ===================================-->
+
+                        <!-- =========
+                        Start Time line section
+                        ===================================-->
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-external-link icn-title"></span> Activities</h3>
+                        <div class="box-block">
+                          <div class="time-line">
+                            <div class="item-event current">
+                              <span class="date">2015</span>
+                              <div class="event-content">
+                                <h4>登壇・発表</h4>
+                                <h5>GCPUG イベント「AWS vs GCP」登壇・発表 | 2015-04-12</h5>
+                                <p><a href="http://gcpug.jp/" target="_blank">GCPUG</a>（Google Cloud Platform Users Group）の一環として開催されたイベント「<a href="http://gcpug-tg.connpass.com/event/13704/" target="_blank">AWS vs GCP</a>」にて、AWS ユーザーとして登壇。<a href="http://www.slideshare.net/aknow3373/aws-46898877" target="_blank">発表資料</a>、<a href="http://blog.a-know.me/entry/2015/04/13/191604" target="_blank">感想ブログエントリ</a>。</p>
+                              </div>
+                            </div>
+                            <div class="item-event ">
+                              <span class="date">随時</span>
+                              <div class="event-content">
+                                <h4>社内技術ブログ執筆</h4>
+                                <h5>所属会社技術ブログ・feedforce Engineers' blog 執筆</h5>
+                                <p>所属会社・株式会社フィードフォースの技術ブログ <a href="http://tech.feedforce.jp/author/inoue" target="_blank">feedforce Engineers' blog</a> にて、不定期的に記事を執筆。</p>
+                              </div>
+                            </div>
+                            <div class="item-event ">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>登壇・発表</h4>
+                                <h5>株式会社クレオフーガにて講演・発表 | 2014-08-20</h5>
+                                <p><a href="http://creofuga.jp/" target="_blank">株式会社クレオフーガ</a>の岡山オフィスに訪問、自社の開発スタイルについての発表やクレオフーガのエンジニアと一緒に KPT を実施などした。<a href="http://blog.a-know.me/entry/2014/08/23/215024" target="_blank">感想ブログエントリ</a>。</p>
+                              </div>
+                            </div>
+                            <div class="item-event ">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>ハッカソン</h4>
+                                <h5>クリスマス直前ハッカソン『サンタソン』にて優勝 | 2012-12-12</h5>
+                                <p>クリスマス直前ハッカソン『サンタソン』に参加。元 Twitter Japan のエンジニアも参加する中、優勝を収めた。<a href="http://blog.a-know.me/entry/20121208/1354972898" target="_blank">感想ブログエントリ</a>。</p>
+                              </div>
+                            </div>
+                            <div class="item-event ">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>登壇・発表</h4>
+                                <h5>第3回 岡山Javaユーザ会 勉強会　登壇・発表 | 2012-07-28</h5>
+                                <p><a href="https://atnd.org/events/30247" target="_blank">第3回 岡山Javaユーザ会</a> 主催の勉強会において、Java FX 2.x をテーマとした発表をするために登壇。<a href="http://www.slideshare.net/aknow3373/javafx-2x3java" target="_blank">当日用いた発表資料</a>。</p>
+                              </div>
+                            </div>
+                            <div class="item-event last">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>登壇・発表</h4>
+                                <h5>第13回中国GTUG勉強会 登壇 | 2012-04-22</h5>
+                                <p>第13回 中国GTUG 勉強会において、Google App Engine をテーマとした発表をするために登壇。<a href="http://www.slideshare.net/a-know/google-app-engine-12635978" target="_blank">当日用いた発表資料</a>、<a href="http://blog.a-know.me/entries/2012/04/22" target="_blank">感想ブログエントリ</a>。</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- =========
+                        End Time line section
+                        ===================================-->
+
+                      </div>
+                      <div class="col-md-4">
+                        <h3 class="title with-icon"><span class="fa fa-code icn-title"></span> Programming Language</h3>
+                        <div class="box-block">
+
+                          <!-- =========
+                          STart your Skills Progress point bars section
+                          ===================================-->
+                          <ul class="list-unstyled list-points-progress">
+                            <li>
+                              <span class="caption-skill">Ruby</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">65%</span>
+                                <div class="progress-bar-point" style="width: 65%;"></div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Java</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">60%</span>
+                                <div class="progress-bar-point" style="width: 60%;"></div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">golang</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">15%</span>
+                                <div class="progress-bar-point" style="width: 15%;"></div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">COBOL</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">30%</span>
+                                <div class="progress-bar-point" style="width: 30%;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- =========
+                          STart your Skills Progress point bars section
+                          ===================================-->
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-keyboard-o icn-title"></span> Development Skills</h3>
+                        <div class="box-block">
+                          <!-- =========
+                          STart your Skills Progress bars section
+                          ===================================-->
+                          <ul class="list-unstyled list-skills">
+                            <li>
+                              <span class="caption-skill">AngularJS</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 15%;">
+                                  <span>半年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Amazon Web Services</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 30%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Chef</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 25%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Google Cloud Platform</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 30%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Google App Engine（Java / golang）</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 75%;">
+                                  <span>4年〜</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Hadoop（AWS Elastic MapReduce）</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 20%;">
+                                  <span>〜1年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">heroku</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 15%;">
+                                  <span>半年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">KVS（Datastore / Redis）</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 75%;">
+                                  <span>4年〜</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">RDB（Oracle / MySQL / PostgreSQL）</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 70%;">
+                                  <span>〜4年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Ruby on Rails</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 30%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Scrum</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 30%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">TDD</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 30%;">
+                                  <span>〜2年</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- =========
+                          End your Skills Progress bars section
+                          ===================================-->
+
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-tags icn-title"></span> Qualifications</h3>
+                        <div class="box-block">
+
+                          <ul class="list-unstyled list-strip">
+                            <li><i class="fa fa-check"></i> <a class="qualification" target="_target" href="http://d.hatena.ne.jp/a-know/20081215/1229350376">ソフトウェア開発技術者</a></li>
+                            <li><i class="fa fa-check"></i> <a class="qualification" target="_target" href="http://d.hatena.ne.jp/a-know/20101220/1292852517">情報セキュリティスペシャリスト</a></li>
+                            <li><i class="fa fa-check"></i> OCJ-P</li>
+                            <li><i class="fa fa-check"></i> <a class="qualification" target="_target" href="http://tech.feedforce.jp/lego-scrum.html">「レゴスクラム」修了</a></li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- =========
+                End resume tab content section
+                ===================================-->
+
+                <!-- =========
+                Start portfolio tab content section
+                ===================================-->
+                <div id='portfolio' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title with-icon"><span class="fa fa-briefcase icn-title"></span> My Works</h3>
+
+                    <!-- =========
+                    Start grid postfolio section
+                    ===================================-->
+                    <ul id='portfolio-grid' class="list-unstyled grid-portfolio">
+                      <li class="mix webdesign">
+                        <div class="item-portfolio">
+                          <a href="img_org/mikanz_big.png" class="preview-portfolio imgWrapper image-popup">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-search-plus "></i></div></div>
+                            <img src="img_org/portfolio_mikanz.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5><a target="_blank" href="http://mikanz.a-know.me/">みんなの未完成品（ミカン）が<br>集まる場所・Mikanz -ミカンズ-</a></h5> <h6>なにかを作ることを趣味とするユーザーの "つくりかけ" のものを登録し、ユーザー同士応援しあえる、という、 「完成させることができるかどうか」を恐れずに何かを創りだそうとする全ての人を応援する、Webサービス。</h6><h5><small>Ruby on Rails / heroku / PostgreSQL<br>開発期間：2015/1 〜 2015/6</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a target="_blank" href="http://qiita.com/a-know/items/55b8f102bd07ad2240c2" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="img_org/portfolio_goramoph.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5><a href="http://qiita.com/a-know/items/55b8f102bd07ad2240c2" target="_blank">iTunes 管理楽曲情報<br>BigQueryローダ "Goramoph"</a></h5><h6>iTunes が管理している楽曲情報（曲名・アルバム名・アーティスト名・再生回数・スキップ回数 etc.）を、Google Cloud Storage を経由して Google BigQuery にロードするツール。<br>開発に関しての<a href="http://blog.a-know.me/entry/2014/11/29/144617" target="_blank">感想エントリ</a>も。</h6><h5><small>golang / Google BigQuery<br>開発期間：2014/11</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a href="img_org/masterpiece_big.png" class="preview-portfolio imgWrapper image-popup">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-search-plus "></i></div></div>
+                            <img src="img_org/portfolio_masterpiece.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5><a href="http://master-piece.appspot.com/" target="_blank">愛用品紹介系サービス<br>「Masterpiece」</a></h5><h6>「大事にされているもの」を集められる場所があれば、そこに登録すること・登録されたものを見ることが小さな楽しみになれば、きっと何らかの「いい」影響を、この世の中に加えることができるんじゃないかと考え、制作した Webサービスです。</h6><h5><small>Java / Google App Engine / Bootstrap<br>開発期間：2012/3</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a target="_blank" href="http://d.hatena.ne.jp/a-know/20990331/" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="img_org/portfolio_saboom_cli.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5><a href="http://d.hatena.ne.jp/a-know/20990331/" target="_blank">iTunes再生回数分析ソフト<br>「sa-boom!! client」</a></h5><h6>iTunes でカウントされている、再生回数。iTunes 上では、再生回数による単純なソートなどを行えるものの、アーティスト別などでのソートや、ある特定期間での再生回数の算出などは行えません。<br>これを実現するために開発したものです。</h6><h5><small>Java FX<br>開発期間：2008/08 〜 2009/03（前ver）2012/05（JavaFX 版）</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a target="_blank" href="http://blog.a-know.me/entry/20120203/1328267963" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="img_org/portfolio_saboom.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5><a target="_blank" href="http://blog.a-know.me/entry/20120203/1328267963">iTunes再生回数分析・共有サービス<br>「sa-boom!!」※公開終了※</a></h5><h6>左記「sa-boom!! client」にて取得した再生回数情報をアップロード、他ユーザーと共有できるWebサービスです。<br>
+「再生回数情報の共有」「利用ユーザー全体での再生トレンドを楽しむ」といった、SNS的要素に主眼を置いています。<br>※公開終了しました※</h6><h5><small>Java / Google App Engine / Bootstrap<br>開発期間：2012/1 〜 2012/02</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a href="img_org/emornal_big.png" class="preview-portfolio imgWrapper image-popup">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-search-plus"></i></div></div>
+                            <img src="img_org/portfolio_emornal.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>ツイート内容感情解析サービス<br>「Emornal」※公開終了※</h5><h6>あなたの日毎のTwitterでのツイートを自動で感情解析して、 「晴れ（良い）」「曇り（ふつう）」「雨（悪い）」の3段階のアイコンで 日記風にマッピングしてくれるサービスです。<br>（Mashup Award #8 応募作品）<br>※公開終了しました※</h6><h5><small>Java / Google App Engine / 感情解析API<br>開発期間：2012/10</small></h5></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- =========
+                    End grid postfolio section
+                    ===================================-->
+
+
+                  </div>
+                </div>
+                <!-- =========
+                End portfolio tab content section
+                ===================================-->
+
+
+                <!-- =========
+                Start Blog tab content section
+                ===================================-->
+                <div id='blog' class="tab-pane fade">
+                  <div class="body-content">
+                    <h2 class="title with-icon"><span class="fa  fa-pencil icn-title"></span> My Blog Recently Posts</h2>
+
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+
+                        <!-- =========
+                        STart blog post section
+                        ===================================-->
+                        <div id="blog-rss-area"></div>
+                        <!-- =========
+                        End blog post section
+                        ===================================-->
+
+                        <a target="_blank" href="http://blog.a-know.me" class="btn btn-flat btn-lg btn-block">View More Post - えいのうにっき</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========
+                End Blog tab content section
+                ===================================-->
+
+              </div>
+              <!-- =========
+              End tab content section
+              ===================================-->
+
+
+              <a id="backtotop" href="#"><i class="fa fa-arrow-up"></i></a>
+              <div class="bg-line"></div>
+            </section>
+            <!-- =========
+            End Content section
+            ===================================-->
+
+
+            <!-- =========
+            Start Footer section
+            ===================================-->
+            <footer class="footer">
+              <p>&copy; a-know 2012 (<a href="https://twitter.com/#!/a_know" target="_blank">@a_know</a>)
+               <img src="https://developers.google.com/appengine/images/appengine-noborder-120x30.gif" alt="Powered by Google App Engine"/></p>
+              Design By Yobio
+            </footer>
+            <!-- =========
+            End Footer section
+            ===================================-->
+
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- JQUERY -->
-    <script src="js/jquery.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- SCRIPTS -->
-    <script src="js/scripts.js"></script>
-    <script src="js/index.js"></script>
+    <!-- =========
+    End Wrapper Page
+    ===================================-->
+
+    <!-- =========
+    Text Showup Wait Document Ready
+    ===================================-->
+    <div id="wait-page" class="text-center">Loading...</div>
+
+    <!-- =========
+    Link Config Custom styles
+    ===================================-->
+
+    <a href="modal_configuration.html" class="configuration ajax_link"><i class="fa fa-cog"></i> Configuration</a>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"> </div>
+
+
+
+    <!-- =========
+    Javascript load
+    ===================================-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- jQuery animation page loader -->
+    <script src='assets/js/pace.min.js'></script>
+
+    <!-- JS maps for gmap3 JavaScript plugins) -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.autofix_anything.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src='assets/js/gmap3.min.js'></script>
+
+    <script src='assets/js/jquery.magnific-popup.min.js'></script>
+
+    <!-- Configuration app js -->
+    <script src="assets/js/original_contents.js"></script>
+    <script src="assets/js/app.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37244202-1']);
@@ -310,5 +743,6 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+
   </body>
 </html>

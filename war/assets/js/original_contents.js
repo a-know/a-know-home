@@ -41,32 +41,4 @@ $(function(){
           //騾壻ｿ｡邨ゆｺ�
         }
     });
-
-    $.ajax({
-        type : 'POST',
-        url : '/getBlogRss',
-        data : controll_data,
-        cache : false,
-        dataType : 'json',
-
-        success : function(json) {
-
-          for(var i = 0; i < 4; i++){
-            blog_html = blog_html.concat('<div class="blog-posts"><div class="blog-post"><div class="row"><div class="col-md-8"><h3 class="title-post"><a target="_blank" href="' + json.entries[i].target_url + '">' + json.entries[i].target_title + '</a>');
-            if(json.entries[i].hatebu_count != ''){
-              blog_html = blog_html.concat(' <a href="' + json.entries[i].hatebu_url + '" target="_blank" style="color:#ff1493; text-decoration:underline;">' + json.entries[i].hatebu_count + 'users</a></h3></div>');
-            }else{
-              blog_html = blog_html.concat('</h3></div>');
-            }
-            blog_html = blog_html.concat('<div class="col-md-4"><div class="blog-date">' + json.entries[i].date + '</div></div></div>');
-            blog_html = blog_html.concat('<div class="body-post"><p>' + json.entries[i].description + '</p>');
-            blog_html = blog_html.concat('<p><a target="_blank" href="' + json.entries[i].target_url + '" class="btn btn-flat style2">Continue Reading...</a></p>');
-            blog_html = blog_html.concat('<div class="love-post-btn"></div></div></div></div>');
-          }
-            $("#blog-rss-area").html( blog_html );
-        },
-        complete : function() {
-          //通信終了
-        }
-    });
 });

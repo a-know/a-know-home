@@ -6,13 +6,16 @@ handlers:
 - url: /
   static_files: static/index.html
   upload: static/index.html
+  secure: always
 
 - url: /heartbeat
   script: _go_app
+  secure: always
 
 - url: /(.*)
   static_files: static/\1
   upload: static/(.*)
+  secure: always
 
 automatic_scaling:
   min_idle_instances: 1

@@ -3,7 +3,7 @@ export default function Summary({ summaryData }: { summaryData: string[][] }) {
     <div className="col-sm-9">
       <ul>
       {summaryData.map(([ id, kind, url, text ]) => (
-        <li>{kind}：<a href={url} target="_blank">{text}</a></li>
+        <li key={id}>{kind}：<a href={url} target="_blank">{text}</a></li>
       ))}
       </ul>
     </div>

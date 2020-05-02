@@ -1,19 +1,11 @@
-runtime: go111
+runtime: nodejs12
 instance_class: F1
 
+default_expiration: '30d'
+
 handlers:
-- url: /
-  static_files: static/index.html
-  upload: static/index.html
-  secure: always
-
-- url: /heartbeat
-  script: auto
-  secure: always
-
 - url: /(.*)
-  static_files: static/\1
-  upload: static/(.*)
+  script: auto
   secure: always
 
 automatic_scaling:

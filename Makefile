@@ -6,5 +6,5 @@ run-dev:
 build:
 	npm run build
 
-deploy: 
+deploy: build
 	npm run deploy

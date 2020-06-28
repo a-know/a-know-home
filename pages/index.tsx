@@ -8,6 +8,7 @@ import OldActivities from '../components/oldActivities'
 import Developments from '../components/developments'
 import Summary from '../components/summary'
 import { getContentsData } from '../lib/contents'
+import React, { useEffect } from "react";
 
 export async function getStaticProps() {
   const contactsData = getContentsData('contacts')
@@ -31,6 +32,9 @@ export async function getStaticProps() {
 }
 
 export default function Home({ contactsData, careersData, qualificationsData, activitiesData, oldActivitiesData, developmentsData, summaryData }) {
+  useEffect(() => {
+    window.location.href = 'https://scrapbox.io/a-know/a-know_%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6'
+  })
   return (
     <Layout>
       <Head>
